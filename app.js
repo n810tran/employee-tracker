@@ -45,7 +45,11 @@ function startPrompt() {
 }
 
 function viewDepartments(){
-
+    db.query('SELECT * FROM department', (err, res) => {
+        if (err) throw err;
+        console.table(res);
+        startApp();
+      });
 }
 
 function viewRoles() {

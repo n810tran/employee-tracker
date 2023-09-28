@@ -1,23 +1,21 @@
 -- Insert departments
 INSERT INTO department (name) VALUES
-    ('Sales'),
-    ('HR'),
-    ('Engineering'),
-    ('Marketing'),
-    ('Legal');
+    ('Survey Corps'),
+    ('Military Police'),
+    ('Garrison Regiment'),
+    ('Scouts');
 
 -- Insert roles
 INSERT INTO role (title, salary, department_id) VALUES
-    ('HR Specialist', 70000, 2),
-    ('Engineer', 80000, 3),
-    ('Marketing Specialist', 80000, 4),
-    ('Sales Representative', 100000, 1),
-    ('Sales Representative2', 100000, 1),
-    ('Sales Representative3', 100000, 1),
-    ('Sales Representative4', 100000, 1),
-    ('Engineering Manager', 100000, 3);
+    ('Commander', 100000.00, 1),
+    ('Captain', 80000.00, 2),
+    ('Soldier', 60000.00, 3),
+    ('Scout', 75000.00, 4),
+    ('Engineer', 70000.00, 1),
+    ('Medic', 65000.00, 2),
+    ('Squad Leader', 75000.00, 3),
+    ('Recon Expert', 85000.00, 4);
 
--- Insert employees
 -- Insert employees (managers)
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
     ('Eren', 'Yeager', 1, NULL),
@@ -29,4 +27,5 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
     ('Mikasa', 'Ackerman', 2, 1),
     ('Armin', 'Arlert', 3, 1),
     ('Hange', 'Zoe', 6, 5),
-    ('Jean', 'Kirstein', 7, 4);
+    ('Jean', 'Kirstein', 7, 4),
+    ('Sasha', 'Blouse', 8, 3);

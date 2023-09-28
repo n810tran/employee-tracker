@@ -44,18 +44,31 @@ function startPrompt() {
         });
 }
 
-function viewDepartments(){
+function viewDepartments() {
     connection.query('SELECT * FROM department', (err, res) => {
         if (err) throw err;
         console.table(res);
         startPrompt();
-      });
+    });
 }
 
 function viewRoles() {
-
+    connection.query('SELECT role.id, role.title, role.salary and departnment.name AS department FROM department ON role.department_id = department.id',
+        (err, results) => {
+            if (err) throw err;
+            console.table(results);
+            startPrompt();
+        }
+    )
 }
 
-function viewEmployees (){
-
+function viewEmployees() {
+    connection.query(
+        'SELECT employee.id, employee.first_name, employee.last_name, role.title, department.name AS department, role.salary FROM employee JOIN role ON employee.role_id = role.id JOIN department ON role.department_id = department.id',
+        (err, results) => {
+            if (err) throw err;
+            console.table(results);
+            startPrompt();
+        }
+    );
 }

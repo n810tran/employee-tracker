@@ -19,7 +19,7 @@ To use this application, you will need to run npm install to install the require
 
 ## Usage
 
-[Recording](./assets/Recording%202023-09-29%20110537.gif)
+![Recording](./assets/Recording%202023-09-29%20110537.gif)
 
 ## License
 This application is licensed under the [MIT](https://opensource.org/licenses/MIT) license.

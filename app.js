@@ -53,7 +53,7 @@ function viewDepartments() {
 }
 
 function viewRoles() {
-    connection.query('SELECT role.id, role.title, role.salary and departnment.name AS department FROM department ON role.department_id = department.id',
+    connection.query('SELECT role.id, role.title, role.salary, department.name AS department FROM role JOIN department ON role.department_id = department.id',
         (err, results) => {
             if (err) throw err;
             console.table(results);

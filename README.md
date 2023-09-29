@@ -18,7 +18,8 @@ This is a CLI application for viewing and editing a company's employee database.
 To use this application, you will need to run npm install to install the required dependencies. Then run node app.js to begin.
 
 ## Usage
-MySQL
+
+[!Recording](./assets/Recording%202023-09-29%20110537.mp4)
 
 ## License
 This application is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
